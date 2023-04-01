@@ -14,7 +14,8 @@ const SignOutButton: FC<SignOutButtonProps> = ({}) => {
     setIsLoading(true);
 
     try {
-      // await signOut("google");
+      await signOut("google");
+      
     } catch (error) {
       toast({
         title: "Error Signing out",
